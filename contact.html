@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="bk.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/logo-removebg-preview.png" alt="Error" width="65" height="40"
+                    class="d-inline-block align-text-top">
+                B.K. INDUSTRIES
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        </div>
+    </nav>
+
+    <div class="contactbg">
+        <div class="row">
+            <div class="col-6">
+                <h1>Contact Us</h1>
+                <form action= "javascript:sendmail()" class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label"></label>
+                        <input type="text" class="form-control" id="Fname" placeholder="FirstName">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label"></label>
+                        <input type="text" class="form-control" id="Sname" placeholder="Surname">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label"></label>
+                        <input type="email" class="form-control" id="Email" placeholder="Email">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label"></label>
+                        <input type="text" class="form-control" id="City" placeholder="City">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label"></label>
+                        <input type="text" class="form-control" id="Address" placeholder="Address">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label"></label>
+
+                        <textarea id="Message" class="form-control required" placeholder="Type Querry/Message here"
+                            rows="4"></textarea>
+                    </div>
+
+                </form>
+                <a href="contact.html"><button id="contactpage" type="button" class="btn btn-light ">
+                        Submit
+                    </button></a>
+            </div>
+            <div class="col-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.82874353226!2d73.84199011472244!3d18.62677108734723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c7893eda8237%3A0xdd376b8f4446b76e!2sB.K.%20Industries!5e0!3m2!1sen!2sin!4v1631082720943!5m2!1sen!2sin"
+                    width="700" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+</body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendmail() {
+        var fname = $('#Fname').val();
+        var sname = $('#Sname').val();
+        var email = $('#Email').val();
+        var city = $('#City').val();
+        var add = $('#Address').val();
+        var msg = $('#Message').val();
+
+        var body = 'Name  :' + fname +' ' + sname + '<br>E-mail  :' + email + '<br>City  :' + city + '<br>Address  :'+ add +'<br>Querry/Message :' + msg;
+
+    }
+
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username: "satyam95611@gmail.com",
+        Password: "password",
+        To: 'bkindustries21@gmail.com',
+        From: "satyam95611@gmail.com",
+        Subject: "Enquiry Mail",
+        Body: body
+    }).then(
+
+        message=>{
+
+            if(message == 'OK'){
+            alert("Your message has been sent. W'll contact you soon.")
+            }else{
+            alert("Something went wrong...!")
+            }}
+    );
+
+</script>
+
+</html>

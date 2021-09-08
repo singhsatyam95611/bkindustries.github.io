@@ -1,0 +1,192 @@
+body{
+    background-color:rgb(255, 255, 255);
+}
+.bg-dark {
+    --bs-bg-opacity: 4;
+    background-color: black;
+}
+.navbar sticky-top{
+    background-color: black;
+    font-family: cursive;
+}
+a{
+    color: white;
+}
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: white;
+    text-decoration: none;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #f9fafb;
+}
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: transparent;
+}
+.btn-light {
+    color: white;
+    border-radius: 120px;
+    border-style: groove;
+    background-color: transparent;
+    border-color: #f8f9fa;
+    padding: 15px 60px;
+    margin-top: 30px;
+}
+ul{
+    color: white;
+}
+hr.rounded{
+    color: #075d8b;
+    opacity: 80%;
+    padding: 3px;
+    margin: 30px 30px;
+}
+h2{
+    margin: auto;
+    color: #075d8b;
+    padding: 10px 30px;
+    font-family: cursive;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+#aboutpara{
+    font-family: cursive;
+    margin: 10px 50px;
+    padding: 5px 25px;
+}
+h5{
+    font-family: cursive;
+}
+#tagline{
+    font-family: cursive;
+    margin: auto;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align : center;
+    color: #d82e5e;
+}
+.startimage{
+    margin: auto;
+    background-image: linear-gradient(rgb(0 0 0 / 70%),rgb(16 14 38 / 70%)),url("Images/bg.jpg");
+    background-position: center;
+    background-size:auto ;
+    text-align: center;
+    padding: 250px 0px;
+}
+.startimage h1{
+    padding-bottom : 65px ;
+
+}
+.startimage p,h1{
+    color: white;
+    font-weight: bold;
+    font-family: cursive;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white(255 255 255 / 55%);
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    padding: 30px 30px;
+    overflow: hidden;
+}
+.carousel{
+    margin-top: 30px 30px;
+    text-align: center;
+}
+#logoimg{
+
+    height: 35%;
+    width: 35%;
+    padding-bottom: 25px;
+}
+
+.about{
+    text-align: center;
+    margin: auto;
+    padding: 10pa 60px;
+}
+#servicesimg{
+    margin: 25px 45px;
+    width: 80%;
+}
+.clearfix{
+    margin: 0px 25px;
+    padding: 5px 15px;
+    text-align: center;
+}
+.clearfix h4{
+    padding-top: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.ms-md-3 {
+    margin-left: 1rem!important;
+    margin-right: 1rem;
+}
+.ms-md-4 {
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+}
+.container clearfix{
+    margin: 10px 10px;
+}
+#clearfiximg {
+    width: 50%;
+    margin: 10px 20px;
+}
+.clearfix h5{
+    text-align: center;
+    color:black;
+}
+.endimage{
+    margin: auto;
+    background-image: linear-gradient(rgb(0 0 0 / 70%),rgb(16 14 38 / 70%)),url("Images/footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;   
+}
+
+.endimage p{
+    color: white;
+    font-weight: bold;
+    font-family: cursive;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.contactbg{
+    margin: auto;
+    background-image: linear-gradient(rgb(0 0 0 / 70%),rgb(16 14 38 / 70%)),url("Images/contactbg.jpg");
+    background-position: center;
+    background-size:auto ;
+    text-align: center;
+    padding: 80px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+    padding: 0px 30px;
+
+}
+.col-6 h1{
+    text-decoration: underline;
+}
+.col-md-6{
+    color: white;
+    text-align: left;
+
+}
+.col-12{
+    color: white;
+    text-align: left;
+    text-align: left;
+    padding-left: 15px;
+}
