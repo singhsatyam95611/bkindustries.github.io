@@ -88,6 +88,7 @@ h5{
     color: white;
     font-weight: bold;
     font-family: Calibri ;
+    padding: 20px 20px;
 }
 .navbar-dark .navbar-nav .nav-link {
     color: white(255 255 255 / 55%);
