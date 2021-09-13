@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="Images/logo-removebg-preview.png" alt="Error" width="65" height="40"
+                <img src="Images/logo-removebg-preview.png" alt="Error" width="55" height="30"
                     class="d-inline-block align-text-top">
                 B.K. INDUSTRIES
             </a>
@@ -33,66 +33,90 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About us</a>
+                    </li>
+                </ul>
+
+            </div>
         </div>
     </nav>
 
-    <div class="contactbg">
-        <div class="row">
-            <div class="col-6">
-                <h1>Contact Us</h1>
-                <form action= "javascript:sendmail()" class="row g-3">
-                    <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label"></label>
-                        <input type="text" class="form-control" id="Fname" placeholder="FirstName">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label"></label>
-                        <input type="text" class="form-control" id="Sname" placeholder="Surname">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label"></label>
-                        <input type="email" class="form-control" id="Email" placeholder="Email">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputCity" class="form-label"></label>
-                        <input type="text" class="form-control" id="City" placeholder="City">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputAddress" class="form-label"></label>
-                        <input type="text" class="form-control" id="Address" placeholder="Address">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputAddress" class="form-label"></label>
+    <!-- Contact Form -->
+    <div class="contactimage">
+        <div class="form">
+            <h3>Contact us:</h3>
+            <form class="row justify-content-center g-3">
+                <div class="col-md-5">
+                    <input type="text" class="form-control" id="name" placeholder="Full Name">
+                </div>
+                <div class="col-md-5">
+                    <input type="number" class="form-control" id="contact" placeholder="Contact No.">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="address" placeholder="Address ">
+                </div>
+                <div class="col-md-4">
+                    <input type="email" class="form-control" id="email" placeholder="Email ">
+                </div>
+                <div class="col-md-5">
+                    <input type="text" class="form-control" id="city" placeholder="City">
+                </div>
+                <div class="col-md-5">
+                    <select class="form-control" id="state" class="form-select">
+                        <option selected>Select State...</option>
+                        <option>Maharashtra</option>
+                        <option>Karnataka</option>
+                        <option>Gujrat</option>
+                        <option>Madhya Pradesh</option>
+                        <option>Rajasthan</option>
+                    </select>
+                </div>
+                <div class="col-md-10">
+                    <textarea class="form-control" placeholder="Type Message here..." id="message"
+                        style="height: 110px"></textarea>
+                </div>
+            </form>
 
-                        <textarea id="Message" class="form-control required" placeholder="Type Querry/Message here"
-                            rows="4"></textarea>
-                    </div>
-
-                </form>
-                <a href="contact.html"><button id="contactpage" type="button" class="btn btn-light ">
-                        Submit
+            <div class='servicespage'>
+                <a href="services.html"><button type="button" class="btn btn-light">
+                        <h5>Submit</h5>
                     </button></a>
             </div>
-            <div class="col-6">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.82874353226!2d73.84199011472244!3d18.62677108734723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c7893eda8237%3A0xdd376b8f4446b76e!2sB.K.%20Industries!5e0!3m2!1sen!2sin!4v1631082720943!5m2!1sen!2sin"
-                    width="700" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            <div class="row g-3">
+                <div class="col-md-12">
+                    <h3>Visit us:</h3>
+                    <h6>***Click on map to get directions***</h6>
+                    <a href="https://goo.gl/maps/pA7UgEy3T63ZS2qW6"><img src="Images/map.jpg" class="img-fluid" alt="..."></a>
+                </div>
+               
             </div>
         </div>
+    </div>
+
 
 </body>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
     function sendmail() {
-        var fname = $('#Fname').val();
-        var sname = $('#Sname').val();
-        var email = $('#Email').val();
-        var city = $('#City').val();
-        var add = $('#Address').val();
-        var msg = $('#Message').val();
+        var fname = $('#name').val();
+        var sname = $('#contact').val();
+        var email = $('#email').val();
+        var city = $('#city').val();
+        var add = $('#address').val();
+        var add = $('#state').val();
+        var msg = $('#message').val();
 
-        var body = 'Name  :' + fname +' ' + sname + '<br>E-mail  :' + email + '<br>City  :' + city + '<br>Address  :'+ add +'<br>Querry/Message :' + msg;
+        var body = 'Name  :' + fname + ' ' + sname + '<br>E-mail  :' + email + '<br>City  :' + city + '<br>Address  :' + add + '<br>Querry/Message :' + msg;
 
     }
 
@@ -106,13 +130,14 @@
         Body: body
     }).then(
 
-        message=>{
+        message => {
 
-            if(message == 'OK'){
-            alert("Your message has been sent. W'll contact you soon.")
-            }else{
-            alert("Something went wrong...!")
-            }}
+            if (message == 'OK') {
+                alert("Your message has been sent. W'll contact you soon.")
+            } else {
+                alert("Something went wrong...!")
+            }
+        }
     );
 
 </script>
