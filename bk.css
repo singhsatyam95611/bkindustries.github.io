@@ -104,6 +104,13 @@ h5{
     margin-top: 30px 30px;
     text-align: center;
 }
+.btn-dark {
+    color: #fff;
+    background-color: #212529;
+    border-color: #212529;
+    border-radius: 80px;
+    padding: 16px 20px;
+}
 #logoimg{
 
     height: 35%;
