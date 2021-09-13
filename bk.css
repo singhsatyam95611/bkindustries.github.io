@@ -25,6 +25,12 @@ a{
     padding-right: 2.5rem;
     padding-left: 2.5rem;
 }
+#logoimg{
+
+    height: 35%;
+    width: 35%;
+    padding-bottom: 25px;
+}
 .bg-dark {
     --bs-bg-opacity: 1;
     background-color: transparent;
@@ -54,11 +60,6 @@ h2{
     font-family: Calibri ;
     font-weight: bold;
     text-decoration-line: underline;
-}
-#aboutpara{
-    font-family: Calibri ;
-    margin: 10px 50px;
-    padding: 5px 25px;
 }
 h5{
     font-family: Calibri ;
@@ -111,17 +112,15 @@ h5{
     border-radius: 80px;
     padding: 16px 20px;
 }
-#logoimg{
-
-    height: 35%;
-    width: 35%;
-    padding-bottom: 25px;
-}
-
 .about{
     text-align: center;
     margin: auto;
     padding: 10pa 60px;
+}
+#aboutpara{
+    font-family: Calibri ;
+    margin: 10px 50px;
+    padding: 5px 25px;
 }
 #servicesimg{
     margin: 25px 45px;
